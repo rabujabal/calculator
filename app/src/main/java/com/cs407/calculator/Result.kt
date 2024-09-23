@@ -1,6 +1,7 @@
 package com.cs407.calculator
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,11 @@ class Result : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //retrieve data passed to main
+        val message = intent.getStringExtra("EXTRA_MESSAGE")
+
+        //find the text view and display the data
+        val resultTextView = findViewById<TextView>(R.id.textView2)
+        resultTextView.text = message
     }
 }
