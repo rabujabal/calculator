@@ -39,6 +39,6 @@ class MainActivity : AppCompatActivity() {
             val  num1 = firstNumber.text.toString()}
     }
 
-    fun doAdd(view: View) {}
+
 
 }
